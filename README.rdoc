@@ -1,26 +1,27 @@
-= sinatra-markaby
+= sinatra-erector
 
-sinatra-markaby is an extension for sinatra to enable rendering of html files
-using markaby templates.
+sinatra-erector is an extension for sinatra to enable rendering of html files
+using erector templates.
 
 == Installation
 
-  sudo gem install sbfaulkner-sinatra-markaby -s http://gems.github.com
+# TODO: make it part of Erector
+  sudo gem install sbfaulkner-sinatra-erector -s http://gems.github.com
 
 == Example
 
   require 'rubygems'
   require 'sinatra'
-  require 'sinatra/markaby'
+  require 'sinatra/erector'
 
   get '/' do
-    markaby :template
+    erector :template
   end
 
   __END__
 
   @@ template
-  mab.html do
+  html do
     head { title "Hello world" }
     body do
       p "Hello world!!!!!"

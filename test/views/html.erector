@@ -1,0 +1,6 @@
+puts "zomg"
+puts "block=#{@block}"
+html do
+  head { title "Hello" }
+  body { yield }
+end

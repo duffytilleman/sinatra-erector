@@ -3,13 +3,13 @@ require 'rake'
 begin
   require 'jeweler'
   Jeweler::Tasks.new do |s|
-    s.name = "sinatra-markaby"
-    s.summary = %Q{Sinatra plugin to enable markaby (.mab) template rendering.}
-    s.email = "brentf@unwwwired.net"
-    s.homepage = "http://github.com/sbfaulkner/sinatra-markaby"
-    s.description = "Sinatra plugin to enable markaby (.mab) template rendering."
-    s.authors = ["S. Brent Faulkner"]
-    s.add_dependency "markaby"
+    s.name = "sinatra-erector"
+    s.summary = %Q{Sinatra plugin to enable erector (.erector) template rendering.}
+    s.email = "alex@stinky.com"
+    s.homepage = "http://github.com/alexch/sinatra-erector"
+    s.description = "Sinatra plugin to enable erector (.erector) template rendering."
+    s.authors = ["Alex Chaffee"]
+    s.add_dependency "erector"
   end
 rescue LoadError
   puts "Jeweler not available. Install it with: sudo gem install technicalpickles-jeweler -s http://gems.github.com"
@@ -18,7 +18,7 @@ end
 require 'rake/rdoctask'
 Rake::RDocTask.new do |rdoc|
   rdoc.rdoc_dir = 'rdoc'
-  rdoc.title = 'sinatra-markaby'
+  rdoc.title = 'sinatra-erector'
   rdoc.options << '--line-numbers' << '--inline-source'
   rdoc.rdoc_files.include('README*')
   rdoc.rdoc_files.include('lib/**/*.rb')

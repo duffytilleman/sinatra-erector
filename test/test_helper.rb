@@ -3,7 +3,7 @@ require 'test/unit'
 require 'rack/test'
 
 $LOAD_PATH.unshift(File.dirname(__FILE__))
-require 'sinatra/markaby'
+require 'sinatra/erector'
 
 class Test::Unit::TestCase
   include Rack::Test::Methods
