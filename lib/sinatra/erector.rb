@@ -1,6 +1,6 @@
 require 'sinatra/base'
 require 'erector'
-require 'activesupport'
+require 'active_support'
 
 module Sinatra
   module Erector
